@@ -1,0 +1,17 @@
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN"
+    "http://directwebremoting.org/schema/dwr30.dtd">
+    
+<dwr>
+	<allow>
+		<create creator="new" javascript="Category">
+			<param name="class" value="com.fanjavaid.ic.controller.CategoryController" />
+		</create>
+		
+		<convert converter="bean" match="com.fanjavaid.ic.model.Category"/>
+		
+		<create creator="new" javascript="Item">
+			<param name="class" value="com.fanjavaid.ic.controller.ItemController" />
+		</create>
+	</allow>
+</dwr>
