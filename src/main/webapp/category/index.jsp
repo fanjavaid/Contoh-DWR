@@ -14,6 +14,10 @@
 	h1.title {
 		color: #333;
 	}
+	a {
+			color: red;
+			text-decoration: none;
+		}
 	#page a {
 		text-decoration:none;
 		color:#ddd;
@@ -58,9 +62,10 @@
 <link href="${pageContext.request.contextPath}/jquery.dynatable.css" rel="stylesheet" type="text/css" />
  -->
 
-<!-- Data Tables Library -->
+<!-- Data Tables Library
 <script type="text/javascript" src="${pageContext.request.contextPath}/datatables/media/js/jquery.dataTables.js"></script>
 <link href="${pageContext.request.contextPath}/datatables/media/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+ -->
 
 <!-- DWR Includes -->
 <script type='text/javascript' src='/itemcategory/dwr/interface/Category.js'></script>
@@ -210,6 +215,7 @@
 </head>
 <body>
 	<h1 class="title">Category</h1>
+	<a href="/itemcategory">Home</a>
 	<table border="0" cellpadding="5">
 		<tr>
 			<td><strong>Catgory Name</strong></td>

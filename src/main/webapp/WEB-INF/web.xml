@@ -27,6 +27,12 @@
   		<param-value>true</param-value>
   	</init-param>
   </servlet>
+  <servlet>
+  	<servlet-name>ItemServlet</servlet-name>
+  	<display-name>ItemServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.fanjavaid.ic.servlet.ItemServlet</servlet-class>
+  </servlet>
   <!-- End -->
   
   <servlet-mapping>
@@ -40,6 +46,10 @@
   <servlet-mapping>
   	<servlet-name>dwr-invoker</servlet-name>
   	<url-pattern>/dwr/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ItemServlet</servlet-name>
+  	<url-pattern>/item</url-pattern>
   </servlet-mapping>
   <!-- End DWR Config -->
   

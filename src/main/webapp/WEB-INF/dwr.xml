@@ -4,14 +4,17 @@
     
 <dwr>
 	<allow>
+		<!-- Initialization -->
 		<create creator="new" javascript="Category">
 			<param name="class" value="com.fanjavaid.ic.controller.CategoryController" />
 		</create>
 		
-		<convert converter="bean" match="com.fanjavaid.ic.model.Category"/>
-		
 		<create creator="new" javascript="Item">
 			<param name="class" value="com.fanjavaid.ic.controller.ItemController" />
 		</create>
+		
+		<!-- Bean Converter -->
+		<convert converter="bean" match="com.fanjavaid.ic.model.Category"/>
+		<convert converter="bean" match="com.fanjavaid.ic.model.Item"/>
 	</allow>
 </dwr>
