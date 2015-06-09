@@ -19,7 +19,9 @@ public interface ItemDao {
 	
 	void delete(int itemId) throws SQLException;
 	
-	List<Item> selectAll() throws SQLException;
+	List<Item> selectAll(int limit, int offset) throws SQLException;
 	
 	Item selectById(int itemId) throws SQLException;
+	
+	long total() throws SQLException; 
 }
