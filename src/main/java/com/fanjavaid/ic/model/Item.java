@@ -15,7 +15,7 @@ public class Item {
 	
 	private String name;
 	
-	private String qty;
+	private int qty;
 	
 	private Date expiredDate;
 	
@@ -39,11 +39,11 @@ public class Item {
 		this.name = name;
 	}
 
-	public String getQty() {
+	public int getQty() {
 		return qty;
 	}
 
-	public void setQty(String qty) {
+	public void setQty(int qty) {
 		this.qty = qty;
 	}
 
